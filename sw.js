@@ -1,8 +1,8 @@
 // Service worker do Afinador Pro. O build (vite.config.ts) preenche a versão e a lista de arquivos.
 // Estratégia: tudo pré-carregado na instalação; página = rede primeiro (cai no cache offline);
 // arquivos com hash = cache primeiro. Nada de áudio passa por aqui.
-const CACHE = "afinador-pro-0.6.0-001ec828";
-const FILES = ["./","assets/analysis.worker-CbROuLrI.js","assets/capture.worklet-Ch6mIsi-.js","assets/index-BjJ2Qx5M.js","assets/index-CtXhl4Vs.css","icons/apple-touch-icon.png","icons/favicon-64.png","icons/icon-192.png","icons/icon-512.png","icons/maskable-512.png","manifest.webmanifest"];
+const CACHE = "afinador-pro-0.6.1-b78d6b2c";
+const FILES = ["./","assets/analysis.worker-CbROuLrI.js","assets/capture.worklet-Ch6mIsi-.js","assets/index-WP_iUGTr.js","assets/index-lwwfzwsr.css","icons/apple-touch-icon.png","icons/favicon-64.png","icons/icon-192.png","icons/icon-512.png","icons/maskable-512.png","manifest.webmanifest"];
 const MATCH = { ignoreSearch: true, ignoreVary: true };
 
 self.addEventListener("install", (e) => {
